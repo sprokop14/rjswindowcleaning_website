@@ -4,11 +4,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    
  }
  
  
  header {
-    background-color: #0073e6;
+    background-color: #1d5995;
     padding: 1em 0;
     color: white;
     text-align: center;
@@ -38,9 +39,10 @@ body {
     margin: 10px;
     background-color: white;
     border-radius: 8px;
+    border-left: 2px solid #000; /* Add left border */
+    border-right: 2px solid #000; /* Add right border */
  }
- 
- 
+   
  footer {
     text-align: center;
     padding: 10px 0;
