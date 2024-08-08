@@ -1,39 +1,75 @@
+/* Body styling */
+
+
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    
+    background-color: #f4f4f4;  
  }
  
+
+/* Header-NavBar-Logo styling */
  
+
+
  header {
-    background-color: #1d5995;
+    background-color: #00264d;
     padding: 1em 0;
     color: white;
     text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: x-large;
  }
  
- 
- nav ul {
-    list-style: none;
-    padding: 0;
- }
- 
- 
- nav ul li {
-    display: inline;
-    margin-right: 10px;
- }
- 
- 
- nav ul li a {
-    color: white;
-    text-decoration: none;
- }
- 
- 
+ nav {
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Centers the ul */
+   padding: 20px 80px; /* Adjust Header Height */
+}
+
+.logo-text {
+   position: absolute;
+   left: 50px; /* Adjust logo img/txt left and right */
+   display: flex;
+   align-items: center;
+}
+
+.logo-text img {
+   height: 60px; /* Adjust height of logo-txt */
+}
+
+.logo-text span {
+   margin-left: 20px; /* Adjust JUST logo-txt left and right */
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center; /* Centers the navigation items */
+}
+
+nav ul li {
+   margin-right: 50px;
+}
+
+nav ul li:last-child {
+   margin-right: 0; /* Corrected to remove margin from the last item */
+}
+
+nav ul li a {
+   color: white;
+   text-decoration: none;
+}
+/* Header-NavBar-Logo styling */
+
+
  section {
     padding: 20px;
     margin: 10px;
