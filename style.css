@@ -13,59 +13,107 @@ body {
 /* Header-NavBar-Logo styling */
  
 
-
- header {
-    background-color: #00264d;
-    padding: 1em 0;
-    color: white;
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-    font-size: x-large;
- }
- 
- nav {
-   position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: center; /* Centers the ul */
-   padding: 20px 80px; /* Adjust Header Height */
+header {
+   background-color: #00264d;
+   padding: 1em 0;
+   color: white;
+   text-align: center;
+   font-family: 'Arial', sans-serif;
+   font-size: 20px;
 }
 
+nav {
+   display: flex;
+   justify-content: space-between; /* Space between logo and nav items */
+   align-items: center;
+   padding: 10px 60px;
+}
+
+/* Left side logo */
 .logo-text {
-   position: absolute;
-   left: 50px; /* Adjust logo img/txt left and right */
    display: flex;
    align-items: center;
 }
 
 .logo-text img {
-   height: 60px; /* Adjust height of logo-txt */
+   height: 60px;
+   margin-left: -20px;
+   margin-right: 20px;
+
 }
 
-.logo-text span {
-   margin-left: 20px; /* Adjust JUST logo-txt left and right */
-}
-
+/* Centered navigation items */
 nav ul {
+   display: flex;
+   justify-content: center;
    list-style: none;
    padding: 0;
    margin: 0;
-   display: flex;
-   align-items: center;
-   justify-content: center; /* Centers the navigation items */
+   flex-grow: 1; /* Ensures the ul takes up available space */
+   margin-left: 0;
 }
 
 nav ul li {
-   margin-right: 50px;
+   margin-right: 30px;
 }
 
 nav ul li:last-child {
-   margin-right: 0; /* Corrected to remove margin from the last item */
+   margin-right: 0;
 }
 
 nav ul li a {
    color: white;
    text-decoration: none;
+}
+
+/* Right side social media links */
+.social-media {
+   display: flex;
+   align-items: center;
+   gap: 20px; /* Space between social media icons */
+}
+
+.social-media a .social-icon {
+   height: 30px; /* Adjust size of icons */
+}
+
+.social-media a {
+   color: white; /* Icon color */
+   text-decoration: none;
+   font-size: 2em; /* Increase the size of the icons */
+   padding: 10px; /* Padding inside the box */
+   border: 2px solid white; /* Border around the icon */
+   border-radius: 8px; /* Rounded corners for the box */
+   transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Change background color and icon color on hover */
+.social-media a:hover {
+   background-color: white; /* Background color on hover */
+   color: #00264d; /* Icon color on hover */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+   nav {
+       padding: 10px 40px;
+   }
+
+   .logo-text {
+       left: 20px;
+   }
+
+   nav ul li {
+       margin-right: 15px;
+   }
+
+   .social-media {
+       gap: 5px;
+   }
+
+   .social-media a .social-icon {
+       height: 25px; /* Adjust size of icons for smaller screens */
+   }
 }
 /* Header-NavBar-Logo styling */
 
